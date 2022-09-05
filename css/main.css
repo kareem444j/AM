@@ -1,0 +1,255 @@
+        @import url("https://use.typekit.net/coa5bcp.css");
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+        /*...........................start header........................*/
+        
+        .header {
+            display: flex;
+            width: 100vw;
+            background-color: rgba(236, 232, 232, 0.226);
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            box-shadow: 0px 5px 15px rgba(128, 128, 128, 0.575);
+        }
+        
+        .header h1 {
+            color: #3a6cf4;
+        }
+        
+        .header .options a {
+            display: grid;
+            display: inline-block;
+            margin-left: 20px;
+            color: black;
+            transition: 0.5s ease;
+            flex-wrap: wrap;
+        }
+        
+        .header .options a:hover {
+            color: blue;
+            text-decoration: underline 3px;
+            transform: scale(0.9);
+        }
+        
+        .icon {
+            font-size: 1.5em;
+            margin-right: 7px;
+        }
+        
+        .but1 {
+            size: 10px;
+        }
+        
+        .search {
+            width: 30%;
+            background-color: rgba(236, 232, 232, 0.226);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 5px 20px;
+            border: 0.3px solid rgba(44, 64, 77, 0.322);
+            overflow: hidden;
+        }
+        
+        .search-after {
+            width: 30%;
+            background-color: rgba(236, 232, 232, 0.226);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 5px 20px;
+            border: 0.3px solid rgba(44, 64, 77, 0.322);
+            overflow: hidden;
+        }
+        
+        .search input {
+            background: none;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 18px 13px;
+            font-size: 1.2em;
+            overflow: hidden;
+        }
+        
+        .search-after input {
+            background: none;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 18px 13px;
+            font-size: 1.2em;
+            overflow: hidden;
+        }
+        
+        .search button {
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            background: none;
+        }
+        
+        .search-after button {
+            border: 0;
+            cursor: pointer;
+            border-radius: 50%;
+            background: none;
+        }
+        
+        .search button img {
+            width: 45px;
+            margin-right: 10px;
+        }
+        
+        .search-after button img {
+            width: 45px;
+            margin-right: 10px;
+        }
+        
+        .more {
+            display: none;
+        }
+        
+        .error-search {
+            display: none;
+        }
+        
+        .error-search-on {
+            width: 100%;
+            min-height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        
+        .error-search-on p {
+            font-size: 3em;
+        }
+        
+        .options2 {
+            display: none;
+        }
+        /*.......................start media screen...............*/
+        
+        @media (max-width: 1023px) {
+            body {
+                font-size: 11px;
+            }
+            .options {
+                display: none;
+            }
+            .search {
+                position: absolute;
+                top: 184px;
+                width: 100%;
+                position: fixed;
+                height: 50px;
+            }
+            .search-after {
+                position: absolute;
+                top: 75px;
+                width: 100%;
+                position: fixed;
+                height: 50px;
+            }
+            .more {
+                display: unset;
+                font-size: 30px;
+            }
+            .more2 {
+                display: unset;
+                font-size: 30px;
+                color: #3a6cf4;
+            }
+            .header {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .but1 {
+                width: 30px;
+            }
+            .error-search-on {
+                text-align: center;
+                padding: 20px;
+            }
+            .options2 {
+                display: flex;
+                position: absolute;
+                top: 50px;
+                width: 100%;
+                position: fixed;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                transition: 0.8s ease;
+            }
+        }
+        
+        .options2 ul {
+            list-style-type: none;
+            transition: 0.8s ease;
+        }
+        
+        .options2 li {
+            color: #fff;
+            width: 100%;
+            transition: 0.8s ease;
+        }
+        
+        .options2 a {
+            color: #fff;
+            border: 0.2px solid #fff;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            padding: 10px;
+            transition: 0.8s ease;
+        }
+        
+        .options2 a:hover {
+            background-color: #fff;
+            color: black;
+            padding-left: 30px;
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        @media (max-width: 300px) {
+            body {
+                font-size: 8px;
+            }
+            .options2 {
+                position: absolute;
+                top: 40px;
+            }
+            .search {
+                position: absolute;
+                top: 160px;
+                height: 45px;
+            }
+            .search-after {
+                position: absolute;
+                top: 60px;
+                height: 45px;
+            }
+        }
